@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="/css/estilos.css">
+    <style>
+        :root {
+            --cor-titulo: #65451f;
+            --cor-descricao: #65451f;
+            --cor-escura: #000;
+            --cor-clara: #fff;
+            --cor-topo-rodape: #cdc2ae;
+            --cor-faixa: #765827;
+            --cor-botao: #9c8250;
+            --cor-botao-escuro: #65451f;
+            --cor-icones: #65451f;
+        }
+
+        .flex {
+            background-color: var(--cor-topo-rodape);
+            color: var(--cor-descricao);
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+        .rodape-links {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        a {
+            text-decoration: none;
+            color: #765827;
+        }
+
+
+        .rodape-info {
+            background-color: var(--cor-topo-rodape);
+            text-align: center;
+            padding: 20px;
+            color: var(--cor-botao);
+            font-weight: bolder;
+        }
+
+    </style>
 </head>
+
 <body>
     <header>
-        <div class="cabecalho" >
+        <div class="cabecalho">
             <h1><a href="index.html">Cake</a></h1>
             <nav>
                 <h2><a href="">Menu</a></h2>
-                <ul class="links-menu" >
+                <ul class="links-menu">
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
                     <li><a href="contato.html">Contato</a></li>
@@ -20,59 +66,62 @@
             </nav>
         </div>
     </header>
-<hr>
+    <hr>
     <main>
-            <h2>Contato</h2>
-        
-            <form action="" method="post" autocomplete="off">
+        <h2>Contato</h2>
 
-                <div><label for="nome">Nome:</label>
-                    <input required placeholder="Digite o nome completo" type="text" name="nome" id="nome">
-                </div>
+        <form action="" method="post" autocomplete="off">
 
-
-                <div><label for="email">E-mail:</label>
-                    <input required placeholder="Digite seu email" type="email" name="email" id="email">
-                </div>
+            <div><label for="nome">Nome:</label>
+                <input required placeholder="Digite o nome completo" type="text" name="nome" id="nome">
+            </div>
 
 
-               <div><label for="telefone">Telefone:</label>
-                    <input required placeholder="Digite seu telefone" type="tel" name="telefone" id="telefone">
-                </div>
+            <div><label for="email">E-mail:</label>
+                <input required placeholder="Digite seu email" type="email" name="email" id="email">
+            </div>
 
-                <div>
-                    <label for="assunto">Assunto:</label>
-                    <input required placeholder="Digite seu assunto" type="text" name="assunto" id="assunto">
-                    
-                </div>
 
-                <div>
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea required name="" id="" cols="30" rows="6"></textarea>
-                </div>
+            <div><label for="telefone">Telefone:</label>
+                <input required placeholder="Digite seu telefone" type="tel" name="telefone" id="telefone">
+            </div>
 
-                <button type="submit">Enviar dados</button>
+            <div>
+                <label for="assunto">Assunto:</label>
+                <input required placeholder="Digite seu assunto" type="text" name="assunto" id="assunto">
 
-            </form>
+            </div>
+
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea required name="" id="" cols="30" rows="6"></textarea>
+            </div>
+
+            <button type="submit">Enviar dados</button>
+
+        </form>
         </article>
     </main>
-<hr>
+    <hr>
     <footer>
-        <div class="rodape-links">
-            <a href="#">HOME PAGE</a>
-            <a href="#">SOBRE</a>
-            <a href="#">PRODUTOS</a>
-            <a href="#">CONTATO</a>
-        </div>
-        <div class="rodape-contato">
-            <p>Telefone: <a href="tel:+551195555555">(11) 95555-5555</a></p>
-            <p>E-mail: <a href="mailto:contato@meuemail.com">contato@meuemail.com</a></p>
-            <p>LOCALIZAÇÃO: Av. Brasil, 5500</p>
-        </div>
+        <section class="flex">
+            <div class="rodape-links">
+                <a href="#">Início</a>
+                <a href="#">Produtos</a>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Contato</a>
+            </div>
+            <div class="rodape-contato">
+                <p>Telefone: <a href="tel:+551195555555">(11) 95555-5555</a></p>
+                <p>E-mail: <a href="mailto:contato@meuemail.com">contato@meuemail.com</a></p>
+                <p>LOCALIZAÇÃO: Av. Brasil, 5500</p>
+            </div>
+        </section>
         <div class="rodape-info">
             <p>Desenvolvido por © Grupo Cake</p>
         </div>
     </footer>
 
 </body>
+
 </html>
