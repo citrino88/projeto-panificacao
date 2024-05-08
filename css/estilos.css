@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-titulo: #4d4d4d;
+    --cor-texto: #333;
+    --cor-escura: #000;
+    --cor-clara: #fff;
+    --cor-intermediaria: #ECECEC;
+}
