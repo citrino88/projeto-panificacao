@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        :root {
+    --cor-titulo: #65451f;
+    --cor-descricao: #65451f;
+    --cor-escura: #000;
+    --cor-clara: #fff;
+    --cor-topo-rodape: #cdc2ae;
+    --cor-faixa: #765827;
+    --cor-botao: #9c8250;
+    --cor-botao-escuro: #65451f;
+    --cor-icones: #65451f;
+} 
+        .cabecalho{
+            background-color: var(--cor-topo-rodape);    
+            display: flex;        
+        }
+        .cabecalho a{
+            text-decoration: none;
+            color: var(--cor-titulo);
+        }
+        .links-menu{
+            list-style: none;
+            display: flex;
+        }
+        .links-menu a {
+            text-transform: uppercase;
+            color: var(--cor-escura);
+            font-weight: bold;
+            display: flex;
+            height: 50px;    
+            justify-content: center;
+            align-items: center;
+            background-color: var(--cor-botao);
+        }
+    </style>
 </head>
 <body>
     <header>
