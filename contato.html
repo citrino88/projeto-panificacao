@@ -19,23 +19,18 @@
             --cor-icones: #65451f;
         }
 
-        .conteudo {
-            background-color: rgb(238, 237, 237);
-            padding: 0.5rem;
-            border-radius: 8px;
-
-
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: var(--cor-clara);
+            z-index: 1;
         }
 
-        .flex {
-            background-color: var(--cor-topo-rodape);
-            color: var(--cor-descricao);
-            font-family: sans-serif;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            font-weight: bold;
-            padding-top: 20px;
+        nav h2 a {
+            color: var(--cor-escura);
+            font-size: 1.2rem;
+            padding: 1rem;
+            display: inline-block;
         }
 
         .rodape-links {
@@ -57,6 +52,78 @@
             color: var(--cor-botao);
             font-weight: bolder;
         }
+
+        .conteudo {
+            background-color: #f3efef73;
+            padding: 0.5rem;
+            border-radius: 8px;
+            max-width: 900px;
+            height: 80vh;
+            margin: auto;
+        }
+
+        input,
+        select,
+        textarea {
+
+            padding: 4px;
+            height: 40px;
+            border-radius: 4px;
+            background-color: rgb(250, 247, 247);
+            border: solid thin #f0efec;
+        }
+
+        textarea {
+            height: auto;
+        }
+
+        form div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        label {
+            font-size: 0.9rem;
+            width: 10%;
+            font-family: sans-serif;
+        }
+
+        form div *:not(label) {
+            width: 80%;
+        }
+
+        .form_box .titulo {
+            padding: 24px 50px;
+            font-size: 2rem;
+            font-family: raleway;
+            border-bottom: thin solid #ccc;
+        }
+
+
+        button {
+            background-color: var(--cor-botao);
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+            padding: 1rem 0.5rem;
+            margin-top: 10px;
+            border-radius: 3px;
+            transition: 500ms;
+            width: 100%;
+        }
+
+        .form_box button:hover {
+            background-color: var(--cor-icones);
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+        }
     </style>
 </head>
 
@@ -74,60 +141,52 @@
             </nav>
         </div>
     </header>
-    <hr>
+
     <main>
-        <article class="conteudo">
-            <h2>Contato</h2>
+        <article class="conteudo limitador">
+            <div class="container">
+                <div class="form_box">
+                    <h2 class="titulo">Formulário de Contato</h2>
 
-            <form action="" method="post" autocomplete="off">
+                    <form action="" method="post" autocomplete="off">
 
-                <div><label for="nome">Nome:</label>
-                    <input required placeholder="Digite o nome completo" type="text" name="nome" id="nome">
+                        <div>
+                            <label for="nome">Nome:</label>
+                            <input required placeholder="Seu nome" type="text" name="nome" id="nome">
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input required placeholder="Seu email" type="email" name="email" id="email">
+                        </div>
+
+                        <div>
+                            <label for="telefone">Telefone:</label>
+                            <input required placeholder="Seu telefone" type="tel" name="telefone" id="telefone">
+                        </div>
+                        <div>
+                            <label for="assunto">Assunto:</label>
+                            <select name="assunto" id="assunto">
+                                <option value=""></option>
+                                <option value="">Dúvidas</option>
+                                <option value="">Reclamações</option>
+                                <option value="">Outros</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea required placeholder="Digite aqui sua mensagem" name="" id="mensagem" cols="20"
+                                rows="5"></textarea>
+                        </div>
+                        <button type="submit">Enviar Mensagem</button>
+
+                    </form>
                 </div>
-
-
-                <div><label for="email">E-mail:</label>
-                    <input required placeholder="Digite seu email" type="email" name="email" id="email">
-                </div>
-
-
-                <div><label for="telefone">Telefone:</label>
-                    <input required placeholder="Digite seu telefone" type="tel" name="telefone" id="telefone">
-                </div>
-
-                <div>
-                    <label for="assunto">Assunto:</label>
-                    <input required placeholder="Digite seu assunto" type="text" name="assunto" id="assunto">
-
-                </div>
-
-                <div>
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea required name="" id="" cols="30" rows="6"></textarea>
-                </div>
-
-                <button type="submit">Enviar dados</button>
-
-            </form>
-        </article>
+            </div>
         </article>
     </main>
-    <hr>
+
     <footer>
-        <section class="flex">
-            
-            <div class="rodape-links">
-                <a href="#">Início</a>
-                <a href="#">Produtos</a>
-                <a href="#">Sobre Nós</a>
-                <a href="#">Contato</a>
-            </div>
-            <div class="rodape-contato">
-                <p>Telefone: <a href="tel:+551195555555">(11) 95555-5555</a></p>
-                <p>E-mail: <a href="mailto:contato@meuemail.com">contato@meuemail.com</a></p>
-                <p>LOCALIZAÇÃO: Av. Brasil, 5500</p>
-            </div>
-        </section>
+        
         <div class="rodape-info">
             <p>Desenvolvido por © Grupo Cake</p>
         </div>
