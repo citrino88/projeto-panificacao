@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <style>
         :root {
@@ -39,7 +40,10 @@
             align-items: center;
             background-color: var(--cor-botao);
         }
-        .caixa {
+        
+        /* Alternativa se não fosse usar o bootstrap*/
+/*
+         .caixa {
         width: 200px; 
     height: 50px; 
     border: 2px solid #ccc;
@@ -61,7 +65,9 @@
     
     .caixa:hover {
         background-color: #e0e0e0; 
-    }
+    } 
+        */
+
 .categorias {
     display: flex;
     flex-direction: column;
@@ -75,11 +81,18 @@ figure img{
     padding: 0;
 }
 .destaque {
-    background-image: url(../imagens/fundo-destaque.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 32vh;
+    background-image: url(css/imagens/im-fundo.jpg);
+    background-attachment: fixed;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 32vh; 
+    font-size: 1.5rem;
+}
+.destaque article, p{
+   font-style: var(--cor-clara);
+   font-family:'work-sans';
 }
     </style>
 </head>
@@ -99,19 +112,28 @@ figure img{
         </div>
     </header>
 
+
+
+
+
+
     <article class="destaque">
         <h2>BOLOS CASEIROS</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, illum!</p>
     </article>
-        <figure><img src="css/imagens/im-fundo.jpg" ialt="Imagem de um doce"></figure>
-    </article>
-    <div class="categorias" >
+    <div class="categorias d-grid gap-2" >
     <h2>Selecione a categoria</h2>
-<a href="categoria-doces.html" class="caixa">DOCES</a>
-<a href="categoria-paesArtesanais.html" class="caixa">PÃES ARTESANAIS</a>
-<a href="categoria-salgados.html" class="caixa">SALGADOS</a>
-<a href="categoria-doces.html" class="caixa">BOLOS CASEIROS</a>
+<a href="categoria-doces.html" class="caixa"><button>DOCES</button></a>
+<a href="categoria-paesArtesanais.html" class="caixa"><button>PÃES ARTESANAIS</button></a>
+<a href="categoria-salgados.html" class="caixa"><button>SALGADOS</button></a>
+<a href="categoria-doces.html" class="caixa"><button>BOLOS CASEIROS</button></a>
 </div>
+
+
+
+
+
+
 <footer>
         <div class="rodape-links">
             <a href="">HOME PAGE</a>
