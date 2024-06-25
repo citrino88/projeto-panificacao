@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+:root {
+    --cor-titulo: #65451f;
+    --cor-descricao: #65451f;
+    --cor-botao-escuro: #65451f;
+    --cor-icones: #65451f;    
+    --cor-topo-rodape: #cdc2ae;
+    --cor-faixa: #765827;
+    --cor-botao: #9c8250;
+    --cor-preto: #000;
+    --cor-branco: #fff;  
+    --cor-dropdown: #ddcdb9;
+    --cor-dropdown-hover: #a99f8e;   
+}
+
+#topo .bg{
+    background-color: var(--cor-topo-rodape);
+}
+
+.dropdown-menu{
+    background-color: var(--cor-dropdown);
+}
+.dropdown-item:hover{
+    background-color: var(--cor-dropdown-hover);
+}
+
+.btn{
+    background-color: var(--cor-botao);
+    color: var(--cor-branco);
+    font-weight: 500;
+}
+.btn-outline:hover{
+    border-color: var(--cor-botao-escuro);
+}
+
+/* pagina bolos.php botoes categorias */
+.caixa {
+    width: 200px; 
+height: 50px; 
+border: 2px solid #ccc;
+text-align: center;
+line-height: 50px; 
+cursor: pointer;
+font-family: Arial, sans-serif;
+font-size: 18px;
+text-decoration: none;
+display: block;
+color: #333;
+background-color: #C8AE7D; 
+border-radius: 15px;
+font-weight: bold;
+}
+.caixa:hover {
+background-color: #e0e0e0;
+}
+
+.caixa:hover {
+    background-color: #e0e0e0; 
+}
+.categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-categorias .btn{
+    color: var(--cor-preto);
+    border-color: var(--cor-botao-escuro);
+    font-weight: 650;
+}
+.btn:hover{
+    border-color: var(--cor-botao-escuro);
+    background-color: var(--cor-topo-rodape);
+    color: var(--cor-preto)
+}
+/* pagina bolos.php botoes categorias */    
+
+/* pagina produtos */
+.bg{
+    background-color: var(--cor-botao-escuro);
+}
+
+.card img{
+    height: 50%;
+}
+
+select{
+    margin-bottom: 10px;
+}
+/* pagina produtos */
+
+
+.destaque-bolos {
+    height: 35vh;
+    background-image: url(../img/im-fundo.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.destaque p{
+    font-family: 'work-sans';
+    margin-top: 0;
+}
+
+.nomeComida {
+    font-size: 2.5rem;
+}
+
+.destaque-paes {
+    height: 35vh;
+    background-image: url(../img/paes.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.destaque-doces {
+    height: 35vh;
+    background-image: url(../img/fundo-doces.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
