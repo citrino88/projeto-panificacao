@@ -115,7 +115,7 @@ select{
 
 .destaque-paes {
     height: 35vh;
-    background-image: url(../img/paes.jpg);
+    background-image: url(../img/salgados.jpg);
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -132,3 +132,5 @@ select{
     justify-content: center;
     align-items: center;
 }
+
+
