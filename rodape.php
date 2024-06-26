@@ -67,9 +67,6 @@
     <a href="https://x.com/?lang=pt-br" target="_blank"><img src="img/twiter.png" alt="Icone instagram"></a>
   </div>
 
-
-  <hr>
-
   </div>
 
 </footer>
