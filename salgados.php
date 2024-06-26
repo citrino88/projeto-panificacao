@@ -46,18 +46,18 @@ Aqui é pra colocar uma imagem banner
 
 <div class="row p-2">
     <div class="shadow col card mx-2 h-50" style="width: 18rem;">
-        <img src="img/pao-alecrim.jpeg" class="card-img-top" alt="...">
+        <img src="img/croissant.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">Pão Alecrim</h5>
-            <p class="card-text">Pão artesanal de Alecrim.</p>
+            <h5 class="card-title">Croissant</h5>
+            <p class="card-text">Croissant de frango.</p>
             <a href="#" class="btn btn-primary">Adicionar</a>
         </div>
     </div>
     <div class="shadow col card mx-2 h-50" style="width: 18rem;">
-        <img src="img/pao-7-graos-queijo.jpeg" class="card-img-top" alt="...">
+        <img src="img/torta-queijo.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">Pão de Grão-de-Queijo</h5>
-            <p class="card-text">Pão artesanal de grãos de queijo.</p>
+            <h5 class="card-title">Torta de queijo</h5>
+            <p class="card-text">Torta de queijo.</p>
             <a href="#" class="btn btn-primary">Eu quero</a>
         </div>
     </div>
