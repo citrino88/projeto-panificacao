@@ -26,18 +26,18 @@ Aqui é pra colocar uma imagem banner
 
 <div class="row p-2">
 <div class="shadow col card mx-2 h-50" style="width: 18rem;">
-  <img src="img/bolo-chocolate-maracuja.jpg" class="card-img-top" alt="...">
+  <img src="img/rocambole-goiaba.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Bolo de Chocolate e Maracujá</h5>
-    <p class="card-text">Bolo de Chocolate e Maracujá.</p>
+    <h5 class="card-title">Rocambole de goiaba</h5>
+    <p class="card-text">Rocambole recheado com goiaba</p>
     <a href="#" class="btn btn-primary">Adicionar</a>
   </div>
 </div>
 <div class="shadow col card mx-2 h-50" style="width: 18rem;">
-  <img src="img/bolo.jpg" class="card-img-top" alt="...">
+  <img src="img/brigadeiro.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Bolo de Creme com Frutas</h5>
-    <p class="card-text">Bolo de Creme com Frutas, massa branca e cobertura de creme de nata.</p>
+    <h5 class="card-title">Brigadeiros</h5>
+    <p class="card-text">Brigadeiros tradicionais de chocolate</p>
     <a href="#" class="btn btn-primary">Eu quero</a>
   </div>
 </div>
