@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .logo,
   .contato,
   .redes-sociais {
@@ -25,6 +26,7 @@
 
   .copy {
     text-align: center;
+    font-family: sans-serif;
   }
 </style>
 <footer class="footer">
@@ -37,6 +39,7 @@
     <p>E-mail: <a href="mailto:contato@meuemail.com">contato@panificacao.com</a></p>
     <p>Endereço: Rua Francisco Coimbra, 403</p>
   </div>
+
   <div class="redes-sociais">
     <h2>Redes Sociais</h2>
     <div class="icones" style="width:max-content">
@@ -45,7 +48,9 @@
       <a href="https://x.com/?lang=pt-br" target="_blank"><img src="img/twiter.png" alt="Icone instagram"></a>
     </div>
   </div>
+
   <hr>
+
   </div>
 
 </footer>
@@ -53,11 +58,12 @@
 <div class="copy">
   <p>&copy; Todos os direitos reservados Grupo cake
 
-    Panificação e Bolos é um site fictício desenvolvido para fins didáticos | Senac Penha &copy; 2024
+    Panificação é um site fictício desenvolvido para fins didáticos | Senac Penha &copy; 2024
   </p>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
