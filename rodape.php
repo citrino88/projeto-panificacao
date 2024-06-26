@@ -28,11 +28,20 @@
     text-align: center;
     font-family: sans-serif;
   }
+
+  @media screen and (max-width: 580px) {
+    .footer {
+      display: block;
+      text-align: center;
+    }
+  }
 </style>
+
 <footer class="footer">
   <div class="logo">
     <img src="img/logo.webp" alt="Logo Cake" width="100" height="100">
   </div>
+
   <div class="contato">
     <h2>Entre em contato</h2>
     <p>Telefone: <a href="tel:+551195555555">(11) 2135-0300</a></p>
@@ -42,12 +51,12 @@
 
   <div class="redes-sociais">
     <h2>Redes Sociais</h2>
-    <div class="icones" style="width:max-content">
-      <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="Icone instagram"></a>
-      <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Icone instagram"></a>
-      <a href="https://x.com/?lang=pt-br" target="_blank"><img src="img/twiter.png" alt="Icone instagram"></a>
-    </div>
+
+    <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="Icone instagram"></a>
+    <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Icone instagram"></a>
+    <a href="https://x.com/?lang=pt-br" target="_blank"><img src="img/twiter.png" alt="Icone instagram"></a>
   </div>
+
 
   <hr>
 
