@@ -1,6 +1,8 @@
 </div>
 </main>
 <style>
+* {box-sizing: border-box;}
+
   .footer {
     display: flex;
     justify-content: space-between;
@@ -24,6 +26,12 @@
     margin-bottom: 10px;
   }
 
+  a {
+            text-decoration: none;
+            color: #765827;
+            font-weight: 500;
+        }
+
   .copy {
     text-align: center;
     font-family: sans-serif;
@@ -34,6 +42,8 @@
       display: block;
       text-align: center;
     }
+
+  
   }
 </style>
 
@@ -45,7 +55,7 @@
   <div class="contato">
     <h2>Entre em contato</h2>
     <p>Telefone: <a href="tel:+551195555555">(11) 2135-0300</a></p>
-    <p>E-mail: <a href="mailto:contato@meuemail.com">contato@panificacao.com</a></p>
+    <p>E-mail: <a href="mailto:panificacaocake@gmail.com">panificacaocake@gmail.com</a></p>
     <p>Endereço: Rua Francisco Coimbra, 403</p>
   </div>
 
