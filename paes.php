@@ -26,7 +26,7 @@ Aqui é pra colocar uma imagem banner
 
 <div class="row p-2">
 <div class="shadow col card mx-2 h-50" style="width: 18rem;">
-  <img src="img/pao-de-forma.jpeg" class="card-img-top" alt="...">
+  <img src="img/pao-de-forma.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Pão-de-Forma</h5>
     <p class="card-text">Pão tradicional de forma.</p>

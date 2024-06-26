@@ -34,10 +34,10 @@ Aqui é pra colocar uma imagem banner
   </div>
 </div>
 <div class="shadow col card mx-2 h-50" style="width: 18rem;">
-  <img src="img/brigadeiro.jpg" class="card-img-top" alt="...">
+  <img src="img/cookies.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Brigadeiros</h5>
-    <p class="card-text">Brigadeiros tradicionais de chocolate</p>
+    <h5 class="card-title">Cookies</h5>
+    <p class="card-text">Cookies com creme de leite</p>
     <a href="#" class="btn btn-primary">Eu quero</a>
   </div>
 </div>
