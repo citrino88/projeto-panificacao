@@ -2,7 +2,7 @@
 require "cabecalho.php";
 ?>
 
-<article class="destaque-bolos">
+<article class="destaque-doces">
     <h2 class="nomeComida">Bolos caseiros</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, illum!</p>
 </article>
