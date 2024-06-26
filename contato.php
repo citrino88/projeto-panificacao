@@ -1,12 +1,15 @@
+<?php require_once "cabecalho.php"; ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="/css/estilos.css">
+    <title>Contato Cake</title>
     <style>
+        * {box-sizing: border-box;}
+
         :root {
             --cor-titulo: #65451f;
             --cor-descricao: #65451f;
@@ -26,39 +29,11 @@
             z-index: 1;
         }
 
-        nav h2 a {
-            color: var(--cor-escura);
-            font-size: 1.2rem;
-            padding: 1rem;
-            display: inline-block;
-        }
-
-
-        .rodape-links {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-        }
-
-        a {
-            text-decoration: none;
-            color: #765827;
-        }
-
-
-        .rodape-info {
-            background-color: var(--cor-topo-rodape);
-            text-align: center;
-            padding: 20px;
-            color: var(--cor-botao);
-            font-weight: bolder;
-        }
-
         .conteudo {
             background-color: #f3efef73;
-            padding: 0.5rem;
+            padding: 1.5rem;
             border-radius: 8px;
-            height: 80vh;
+            height: auto;
             margin: auto;
         }
 
@@ -81,7 +56,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
 
         label {
@@ -116,7 +91,7 @@
             padding: 1rem 0.5rem;
             margin-top: 20px;
             border-radius: 5px;
-            
+
             margin-left: 40vw;
         }
 
@@ -161,18 +136,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="cabecalho">
-            <h1><a href="index.html">Cake</a></h1>
-            <nav>
-                <h2><a href="">Menu</a></h2>
-                <ul class="links-menu">
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+    </div>
     </header>
 
     <main>
@@ -183,11 +147,11 @@
         <article class="conteudo limitador">
             <div class="container">
                 <div class="form_box">
-                    
+
                     <h2>Deixe sua mensagem!</h2>
-                    <p>Preencha o formulário abaixo, com sua dúvida, sugestão ou relamação.</p>
-                  <hr>
-                    <form action="" method="post" autocomplete="off">
+                    <p style="padding-bottom: 30px;">Preencha o formulário abaixo, com sua dúvida, sugestão ou reclamação.</p>
+                    <hr>
+                    <form action="https://formspree.io/f/mvgpplen" method="post" autocomplete="off">
 
                         <div>
                             <label for="nome">Nome:</label>
@@ -213,13 +177,14 @@
                         </div>
                         <div>
                             <label for="mensagem">Mensagem:</label>
-                            <textarea required placeholder="Digite aqui sua mensagem" name="" id="mensagem" cols="20" rows="5"></textarea>
+                            <textarea required placeholder="Digite aqui sua mensagem" name="mensagem" id="mensagem" cols="50" rows="10"></textarea>
                         </div>
-                        <div class="d-grid gap-2 col-6 mx-auto">
-                        <button type="submit">Enviar Mensagem</button>
-    </div>
-
+                        <div class="text-align:center">
+                            <button type="submit">Enviar Mensagem</button>
+                        </div>
                     </form>
+                    <p id="status-do-envio"></p>
+
                 </div>
             </div>
         </article>
@@ -228,7 +193,7 @@
     <footer>
 
         <?php
-        require_once "../panificacao/rodape.php";
+        require_once "rodape.php";
         ?>
     </footer>
 
