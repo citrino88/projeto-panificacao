@@ -40,10 +40,12 @@
   @media screen and (max-width: 580px) {
     .footer {
       display: block;
-      text-align: center;
+      text-align: center; 
     }
+.copy{
+  font-size: 0.85rem;
+} 
 
-  
   }
 </style>
 
@@ -69,12 +71,12 @@
 
   </div>
 
+  
 </footer>
 
 <div class="copy">
-  <p>&copy; Todos os direitos reservados Grupo cake
-
-    Panificação é um site fictício desenvolvido para fins didáticos | Senac Penha &copy; 2024
+  <p>&copy; Todos os direitos reservados Grupo Cake
+Panificação - Site fictício desenvolvido para fins didáticos | Senac Penha &copy; 2024
   </p>
 </div>
 
