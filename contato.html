@@ -33,7 +33,7 @@
             display: inline-block;
         }
 
-    
+
         .rodape-links {
             display: flex;
             flex-direction: column;
@@ -58,7 +58,6 @@
             background-color: #f3efef73;
             padding: 0.5rem;
             border-radius: 8px;
-            max-width: 900px;
             height: 80vh;
             margin: auto;
         }
@@ -95,6 +94,12 @@
             width: 80%;
         }
 
+        .form_box {
+            background-color: #dbd4c7;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
         .form_box .titulo {
             padding: 24px 50px;
             font-size: 2rem;
@@ -108,37 +113,49 @@
             color: #fff;
             cursor: pointer;
             border: none;
-            font-weight: bold;
             padding: 1rem 0.5rem;
-            margin-top: 10px;
-            border-radius: 3px;
-            transition: 500ms;
-            width: 100%;
+            margin-top: 20px;
+            border-radius: 5px;
+            
+            margin-left: 40vw;
         }
 
         .form_box button:hover {
-            background-color: var(--cor-icones);
-            padding-top: 50px;
+            background-color: var(--cor-botao-escuro);
         }
 
         .container {
-            max-width: 600px;
+            max-width: 800px;
             width: 100%;
             margin: 0 auto;
         }
 
-        .banner{
-            background-image: url(../contato.jpg);
-            height: 80vh;
+        .banner {
+            background-image: url(img/sobremesa.jpg);
             display: flex;
-            flex-direction:column;
+            height: 50vh;
+            background-attachment: fixed;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            align-content: center;
-            background-repeat:no-repeat;
         }
 
-        .banner h2{
-            color:#9c8250;
+        .banner h2 {
+            color: white;
+            padding-top: 50px;
+            font-size: 3.5rem;
+            font-family: nunito, sans-serif;
+        }
+
+        .banner p {
+            color: white;
+            font-family: nunito, sans-serif;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: raleway, sans-serif;
         }
     </style>
 </head>
@@ -160,13 +177,16 @@
 
     <main>
         <section class="banner">
-        <h2>Entre em contato</h2>
-            </section>
+            <h2>Contato</h2>
+            <p>Oferecemos diariamente a melhor experiência e sabores para você!</p>
+        </section>
         <article class="conteudo limitador">
             <div class="container">
                 <div class="form_box">
-                    <h2 class="titulo">Formulário de Contato</h2>
-
+                    
+                    <h2>Deixe sua mensagem!</h2>
+                    <p>Preencha o formulário abaixo, com sua dúvida, sugestão ou relamação.</p>
+                  <hr>
                     <form action="" method="post" autocomplete="off">
 
                         <div>
@@ -193,10 +213,11 @@
                         </div>
                         <div>
                             <label for="mensagem">Mensagem:</label>
-                            <textarea required placeholder="Digite aqui sua mensagem" name="" id="mensagem" cols="20"
-                                rows="5"></textarea>
+                            <textarea required placeholder="Digite aqui sua mensagem" name="" id="mensagem" cols="20" rows="5"></textarea>
                         </div>
+                        <div class="d-grid gap-2 col-6 mx-auto">
                         <button type="submit">Enviar Mensagem</button>
+    </div>
 
                     </form>
                 </div>
@@ -205,10 +226,10 @@
     </main>
 
     <footer>
-        
-        <div class="rodape-info">
-            <p>Desenvolvido por © Grupo Cake</p>
-        </div>
+
+        <?php
+        require_once "../panificacao/rodape.php";
+        ?>
     </footer>
 
 </body>
