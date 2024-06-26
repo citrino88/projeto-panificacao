@@ -1,6 +1,6 @@
 <?php 
-require "cabecalho.php"; 
-?>  
+require_once "cabecalho.php";
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -49,11 +49,10 @@ body {
   background-size: cover;
   background-position: center;
   height: 65vh; 
-  width: 100vw;
+  width: 100vw;  
   display: flex;
   color: var(--cor-clara);
   padding: 20px;
-  text-align: center;
   flex-direction: column;
   align-items: center;
 }
@@ -67,6 +66,8 @@ body {
 
 .overlay p {
   margin-top: 0;
+  text-align: center;
+  margin-right: 10px;
 }
 
 #carouselExample {
@@ -105,6 +106,7 @@ body {
   background-position: center;
   text-align: center;
   padding: 13px 0;
+  margin-bottom: 25px;
 }
 
 .faleconosco h2 {
@@ -211,10 +213,10 @@ hr {
 <body>
 
 <main>
-  <!-- <div class="container"> -->
+
     <article class="overlay">
         <h2>Doces</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deleniti minima quasi assumenda itaque porro exercitationem veritatis voluptas! Maxime reprehenderit ipsum</p>
+        <p>Doces são uma deliciosa tentação, presentes em diversas culturas ao redor do mundo. Desde chocolates cremosos a balas coloridas, cada tipo de doce traz consigo uma explosão de sabores e texturas. Além disso, a confeitaria é uma verdadeira arte, onde confeiteiros criam obras-primas que encantam os olhos e o paladar.</p>
     </article>
   </div>
 
@@ -319,11 +321,9 @@ hr {
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
-
-
-</body>
-</html>
-
 <?php 
 require_once "rodape.php";
 ?>
+
+</body>
+</html>
