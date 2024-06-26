@@ -17,32 +17,30 @@ require "cabecalho.php";
 
 
 <hr>
-<div class="bg p-2 text-white bg-opacity-75">This is 75% opacity success background
-<br>
-Aqui é pra colocar uma imagem banner
+<!-- Adicione este espaço reservado para o carrinho -->
+<div id="cart" class="cart">
+    <h3>Carrinho de Compras</h3>
+    <ul id="cart-items"></ul>
 </div>
-
-<hr>
 
 <div class="row p-2">
-<div class="shadow col card mx-2 h-50" style="width: 18rem;">
-  <img src="img/pao-de-forma.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Pão-de-Forma</h5>
-    <p class="card-text">Pão tradicional de forma.</p>
-    <a href="#" class="btn btn-primary">Adicionar</a>
-  </div>
+    <div class="shadow col card mx-2 h-50" style="width: 18rem;">
+        <img src="img/pao-de-forma.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Pão-de-Forma</h5>
+            <p class="card-text">Pão tradicional de forma.</p>
+            <button class="btn btn-primary add-to-cart" data-product="Pão-de-Forma">Adicionar</button>
+        </div>
+    </div>
+    <div class="shadow col card mx-2 h-50" style="width: 18rem;">
+        <img src="img/pao-recheado-beirute.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Pão-Recheado-Beirute</h5>
+            <p class="card-text">Pão recheado de beirute.</p>
+            <button class="btn btn-primary add-to-cart" data-product="Pão-Recheado-Beirute">Eu quero</button>
+        </div>
+    </div>
 </div>
-<div class="shadow col card mx-2 h-50" style="width: 18rem;">
-  <img src="img/pao-recheado-beirute.jpeg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Pão-Recheado-Beirute</h5>
-    <p class="card-text">Pão recheado de beirute.</p>
-    <a href="#" class="btn btn-primary">Eu quero</a>
-  </div>
-</div>
-</div>
-
 
 <div class="row p-2">
     <div class="shadow col card mx-2 h-50" style="width: 18rem;">
@@ -50,7 +48,7 @@ Aqui é pra colocar uma imagem banner
         <div class="card-body">
             <h5 class="card-title">Pão Alecrim</h5>
             <p class="card-text">Pão artesanal de Alecrim.</p>
-            <a href="#" class="btn btn-primary">Adicionar</a>
+            <button class="btn btn-primary add-to-cart" data-product="Pão Alecrim">Adicionar</button>
         </div>
     </div>
     <div class="shadow col card mx-2 h-50" style="width: 18rem;">
@@ -58,10 +56,42 @@ Aqui é pra colocar uma imagem banner
         <div class="card-body">
             <h5 class="card-title">Pão de Grão-de-Queijo</h5>
             <p class="card-text">Pão artesanal de grãos de queijo.</p>
-            <a href="#" class="btn btn-primary">Eu quero</a>
+            <button class="btn btn-primary add-to-cart" data-product="Pão de Grão-de-Queijo">Eu quero</button>
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const buttons = document.querySelectorAll('.add-to-cart');
+        const cartItems = document.getElementById('cart-items');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const product = button.getAttribute('data-product');
+                addToCart(product);
+            });
+        });
+
+        function addToCart(product) {
+            const li = document.createElement('li');
+            li.textContent = product;
+
+            const removeButton = document.createElement('button');
+            removeButton.textContent = 'Remover';
+            removeButton.classList.add('btn', 'btn-danger', 'ml-2');
+            removeButton.addEventListener('click', () => {
+                li.remove();
+            });
+
+            li.appendChild(removeButton);
+            cartItems.appendChild(li);
+        }
+    });
+</script>
+
+
+
 
 
     <?php
