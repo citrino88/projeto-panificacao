@@ -17,7 +17,7 @@ require "cabecalho.php";
 
 
 <hr>
-<!-- Adicione este espaço reservado para o carrinho -->
+
 <div id="cart" class="cart">
     <h3>Carrinho de Compras</h3>
     <ul id="cart-items"></ul>
