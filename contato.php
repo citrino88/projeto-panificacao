@@ -132,6 +132,10 @@
         h2 {
             font-family: raleway, sans-serif;
         }
+
+         button {
+            margin-left: auto;
+        }
     </style>
 </head>
 
