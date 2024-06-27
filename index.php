@@ -68,6 +68,7 @@ body {
   margin-top: 0;
   text-align: center;
   margin-right: 10px;
+  padding-right: 15px;
 }
 
 #carouselExample {
