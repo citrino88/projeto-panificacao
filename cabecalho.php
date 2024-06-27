@@ -7,6 +7,7 @@
 <script src="js/loja.js" async></script>
 <title>Panificação e Bolos</title>
 
+<link rel="stylesheet" href="css/styles.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -35,7 +36,8 @@
             Categorias
           </a>
           <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="produto.php">Página Produto</a></li>
+          <li><a class="dropdown-item" href="produtos.php">Produtos</a></li>
+            <li><a class="dropdown-item" href="loja.php">Loja</a></li>
             <li><a class="dropdown-item" href="doces.php">Doces</a></li>
             <li><a class="dropdown-item" href="salgados.php">Salgados</a></li>
             <li><a class="dropdown-item" href="paes.php">Pães</a></li>
