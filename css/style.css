@@ -94,16 +94,6 @@ select{
 /* pagina produtos */
 
 
-.destaque-bolos {
-    height: 35vh;
-    background-image: url(../img/im-fundo.jpg);
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .destaque p{
     font-family: 'work-sans';
     margin-top: 0;
@@ -115,9 +105,10 @@ select{
 
 
 .destaque-doces {
-    height: 35vh;
-    background-image: url(../img/fundo-doces.jpg);
+    height: 50vh;
+    background-image: url(../img/im-fundo.jpg);
     background-attachment: fixed;
+    /* background-size: cover; */
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -31,7 +31,7 @@ $dadosProduto = lerNoticiaCompleta($conexao, $id);
 <h3>PRODUTOS RELACIONADOS</h3>
 <div class="row p-2">
   <div class="shadow col card mx-2 h-50" style="width: 18rem;">
-    <img src="img/bolo-chocolate-maracuja.jpg" class="card-img-top" alt="...">
+    <img src="img/bolo-chocolatae-maracuja.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Bolo de Chocolate e Maracujá</h5>
       <p class="card-text">Bolo de Chocolate e Maracujá.</p>
