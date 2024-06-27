@@ -105,10 +105,9 @@ select{
 
 
 .destaque-doces {
-    height: 50vh;
-    background-image: url(../img/im-fundo.jpg);
+    height: 35vh;
+    background-image: url(../img/fundo-doces01.jpg);
     background-attachment: fixed;
-    /* background-size: cover; */
     display: flex;
     flex-direction: column;
     justify-content: center;
