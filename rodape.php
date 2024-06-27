@@ -51,7 +51,7 @@
 
 <footer class="footer">
   <div class="logo">
-    <img src="img/logo.webp" alt="Logo Cake" width="100" height="100">
+    <img src="imagens/logo.webp" alt="Logo Cake" width="100" height="100">
   </div>
 
   <div class="contato">
